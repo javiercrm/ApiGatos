@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AJAX</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+ <div class="grid-container centered">
+    <div id="grid-100">
+      <div id="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Busqueda de fotos de gatos</h1>
+            <form id="SeleccionCategoria" onsubmit="return false">
+              <label>Selecciona una categoria:  </label>
+              <select id="opciones"></select>
+              <input type="submit" id="CategoriaInput" value="Enviar">
+            </form>
+            <br/>
+            <form id="SeleccionTam" onsubmit="return false">
+              <label>Selecciona Elementos por Pagina:  </label>
+              <select id="tamPagina">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+              <input type="submit" id="TamInput" value="Enviar">
+            </form>
+            
+          </div>
+        </div>
+
+        <ul id="photos">
+        </ul>
+        
+
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</html>
+
+ 
